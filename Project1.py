@@ -26,8 +26,8 @@ for x in s:
     plt.plot(t, solution, label = "Temp: " + str(x))
 
 # Labeling x and y axes
-plt.xlabel('Time (s)')
-plt.ylabel('Temperature')
+plt.xlabel('Time (Seconds)')
+plt.ylabel('Temperature (Celsius)')
 # Giving title to graph
 plt.title('Computer Cooling')
 # Shows legend
