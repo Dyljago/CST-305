@@ -1,5 +1,5 @@
 # Dylan Johnson
-# Using NumPy and MatPlotLib libraries
+# Using NumPy, SciPy, and MatPlotLib libraries
 
 import numpy as np
 import matplotlib.pyplot as plt
