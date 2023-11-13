@@ -21,7 +21,7 @@ def runCode(r):
     xs = np.empty(num_steps + 1)
     ys = np.empty(num_steps + 1)
     zs = np.empty(num_steps + 1)
-    # Set initial x, y, and z values to 7.5, 22.5, and 35 kilobytes
+    # Set initial x, y, and z values to 7.5, 22.5, and 35 kilobytes for txt, rtf, and docx files
     xs[0], ys[0], zs[0] = (7.5, 22.5, 35)
     # For loop to move through the number of steps
     for i in range(num_steps):
