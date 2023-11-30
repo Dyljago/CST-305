@@ -1,7 +1,8 @@
 # Dylan Johnson
-# Using libraries numpy, matplotlib, and fractions
+# Using libraries numpy, matplotlib, scipy, and fractions
 import numpy as np
 import matplotlib.pyplot as plt
+from scipy.integrate import odeint
 from fractions import Fraction
 
 
@@ -122,3 +123,39 @@ plt.ylabel('a(n+2)')
 # Show grid
 plt.grid(True)
 plt.show()
+
+
+# Defining ODE
+def part3(T,t,k,s):
+    # Newton's Law of Cooling
+    dTdt = -k*(T-s)
+    return dTdt
+
+# Parameters
+k = 0.5 #Constant cooling rate
+T = 80  # Initial temperature of computer cooling liquid
+s = [50,60,70,80, 90]  # Temperature of surroundings
+
+# Time span
+t = np.linspace(0, 10)
+
+# Going through array of s
+for x in s:
+    # Finding solution of ode
+    solution = odeint(part3, T, t, args=(k, x))
+    # Plotting solution over time
+    plt.plot(t, solution, label = "Temp: " + str(x))
+
+# Labeling x and y axes
+plt.xlabel('Time (Seconds)')
+plt.ylabel('Temperature (Celsius)')
+# Giving title to graph
+plt.title('Computer Cooling')
+# Shows legend
+plt.legend()
+# Shows grid
+plt.grid(True)
+# Shows graph
+plt.show()
+
+
