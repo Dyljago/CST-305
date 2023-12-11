@@ -6,7 +6,7 @@ import numpy as np
 # Use a linespace at 1 (to avoid division by 0) to 1000
 k = np.linspace(1, 1000)
 
-# Set variables
+# Set variables theta and mu
 theta = 10
 mu = 5
 
