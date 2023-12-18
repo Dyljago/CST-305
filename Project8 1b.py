@@ -7,7 +7,7 @@ x = sp.symbols('x')
 f = 3*x + 2*x**2
 
 # Set a and b for the interval
-a = 0
+a = 0 
 b = 1
 
 # Set n and k variables and calculate delta_x
