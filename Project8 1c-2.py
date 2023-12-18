@@ -1,6 +1,6 @@
 # Dylan Johnson
 # Import sympy
-import sympy as sp
+import sympy as sp 
 
 # Define the function
 x = sp.symbols('x')
